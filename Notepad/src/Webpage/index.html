@@ -3,27 +3,37 @@
         <title>
             Notepad
         </title>
+        <script src="libs/p5.min.js"></script>
+        <script src="libs/p5.dom.min.js"></script>
+        <script src="sketch.js"></script>
+        
+        <style>
+            #header{
+                background-color:cornflowerblue;
+                color:whitesmoke;
+                text-shadow: 1px 1px;
+                padding:10pt;
+            }
+            #document{
+                background-color: white;
+            }
+            p {
+                color:crimson;
+                text-shadow: 1px 1px;
+                font-size: 20px;
+                font-style:italic;
+                font-family:sans-serif;
+                font-variant: small-caps;
+            }
+        </style>
     </head>
     <body>
-        <h1>
+        <h1 id="header">
             Notepad Java Application
-            <img src="icon.png" width="50" height="50">
-            <br>
+            <img src="icon.png" width="30" height="30">
         </h1>
-	<h3>
-            made by Shreyas Dobhal 
-            <br>
-            <br>
-	</h3>
-	<p>
-            <img src="Thumbnail.png" width="250" height="350"> <br><br>
-	</p>
-	<p>
-            <h4> 
-		This is a simple Text Editor Application, helps create Notes easily.<br>
-		This project was created as a part of MNNIT's tech fest AVISHKAR
-		Under the event Cyber Quest 
-            </h4>
-	</p>
+        <p id="document"> <!-- Canvas Area --> </p>
+	
+	
     </body>
 </html>

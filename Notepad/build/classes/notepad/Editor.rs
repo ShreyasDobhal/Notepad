@@ -1,0 +1,2 @@
+notepad.Editor
+notepad.FixedStack
